@@ -46,4 +46,4 @@ moment but it could be easily extended to include other PGXN-based extensions.
 
 #### GitHub test...
 
-Test link to my '.github' repo: [test link](testpage.md)
+Test link to my '.github' repo: [test link](test.md)
