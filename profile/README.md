@@ -12,6 +12,12 @@ of database metadata across multiple databases. The current output is useful if 
 working on multiple databases, e.g., "what's the 'quote' character?" but I suspect the real value
 will be in comparising multiple versions of the same database.
 
+### [postgresql-pljava-docker](https://github.com/beargiles/postgresql-pljava-docker)
+
+This repo, still on my 'beargiles' account, uses GitHub actions to automatically build several
+docker images that extend the official PostgreSQL docker image. It only builds pl/java at the
+moment but it could be easily extended to include other PGXN-based extensions.
+
 ## Testing
 
 ### [testcontainers-java-extras](https://github.com/coyotesong/testcontainers-java-extras)
@@ -44,12 +50,6 @@ to simplify the adoption of YubiKeys by developers and users.
 I also want to investigate how to unlock an encrypted (linux) disk using the motherboard's TPM
 chip. It's not as secure as a user typing in a good passpharse but it will allow a system to fully
 reboot without human intervention.
-
-### [postgresql-pljava-docker](https://github.com/beargiles/postgresql-pljava-docker)
-
-This repo, still on my 'beargiles' account, uses GitHub actions to automatically build several
-docker images that extend the official PostgreSQL docker image. It only builds pl/java at the
-moment but it could be easily extended to include other PGXN-based extensions.
 
 ## About Me
 
