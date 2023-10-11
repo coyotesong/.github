@@ -1,11 +1,9 @@
 # Coyote Song
 
 This is the public repo of Coyote Song - the freelance contractor
-company for [Bear Giles](mailto:bgiles@coyotesong.com).
+company for [Bear Giles](mailto:bgiles@coyotesong.com). I'm currently focused on databases, testing, and security.
 
-## Focus
-
-I'm currently focused on databases, testing, and security.
+## Databases
 
 ### [database-metadata-comparison](https://github.com/coyotesong/database-metadata-comparison)
 
@@ -14,11 +12,29 @@ of database metadata across multiple databases. The current output is useful if 
 working on multiple databases, e.g., "what's the 'quote' character?" but I suspect the real value
 will be in comparising multiple versions of the same database.
 
+## Testing
+
 ### [testcontainers-java-extras](https://github.com/coyotesong/testcontainers-java-extras)
 
 This repo contains new test containers that I plan to contribute to the TestContainer project
 once they're stable. The current focus is cloud databases (using the docker images provided for
 development and testing) but I have plans to also support IdP containers in the future.
+
+## Security
+
+### Using AccessControlContext to restrict access to sensitive resources (gist)
+
+This is somewhat outdated since the SecurityManager has been removed from the JVM but this
+functionaly may return in a JEP. It uses the SecurityManager infrastructure but with a much
+more functional focus. The general idea is to create an AccessControlContext that permits
+access to the sensitive resource (file, network) and then use a SecurityManager that blocks
+that access. All access will fail unless run as a PrivilegedAction by that previously
+created AccessControlContext.
+
+[Gist](https://gist.github.com/beargiles/69f34af3bec7cde3a0c2bddb1409f3b5)
+
+We can still use a similar approach within our libraries but we can't (currently) restrict
+access at the JVM level.
 
 ### [YubiKeys-TPMs-and-more](https://github.com/coyotesong/YubiKeys-TPMs-and-more)
 
