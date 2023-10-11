@@ -28,7 +28,7 @@ development and testing) but I have plans to also support IdP containers in the 
 
 ## Security
 
-### Using AccessControlContext to restrict access to sensitive resources (gist)
+### [Using AccessControlContext to restrict access to sensitive resources](https://gist.github.com/beargiles/69f34af3bec7cde3a0c2bddb1409f3b5) (gist)
 
 This is outdated since the SecurityManager has been removed from the JVM but this
 functionality may return in a JEP. It uses the SecurityManager infrastructure but with a much
@@ -36,8 +36,6 @@ more functional focus. The general idea is to create an AccessControlContext tha
 access to the sensitive resource (file, network) and then use a SecurityManager that blocks
 that access. All access will fail unless run as a PrivilegedAction by that previously
 created AccessControlContext.
-
-[Gist](https://gist.github.com/beargiles/69f34af3bec7cde3a0c2bddb1409f3b5)
 
 We can still use a similar approach within our libraries but we can't (currently) restrict
 access at the JVM level.
