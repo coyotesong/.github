@@ -3,6 +3,22 @@
 This is the public repo of Coyote Song - the freelance contractor
 company for [Bear Giles](mailto:bgiles@coyotesong.com). I'm currently focused on databases, testing, and security.
 
+## Spring Boot
+
+### [spring-boot-with-testcontainers-examples](https://github.com/coyotesong/spring-boot-with-testcontainers-examples)
+
+Examples of using TestContainers with Spring Boot. At the moment this is limited to
+relational databases and jOOQ, but the project is designed to support additional
+persistence mechanisms.
+
+This project demonstrates:
+
+- using flyway to initialize the database schema
+- using the org.jooq maven plugin to autogenerate the required source files in a separate source directory
+
+(I haven't added Spring JdbcTemplate, Spring Data, etc., since there's an unexpected jOOQ error
+when I add JPA annotations to my persisted classes.)
+
 ## Databases
 
 ### [database-metadata-comparison](https://github.com/coyotesong/database-metadata-comparison)
