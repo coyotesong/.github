@@ -73,7 +73,3 @@ reboot without human intervention.
 
 - 'Homelab' since long before that became a term. E.g., I remember exploring Kerberos in the late 1990s - before Active Directory "embraced and extended" it.
 
-
-#### GitHub test...
-
-Test link to my '.github' repo: [test link](test.md)
