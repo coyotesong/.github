@@ -25,7 +25,7 @@ unit tests.
 
 A classic example of a loop invariant is the quicksort algorithm:
 
-```java```
+```java
 <T> List<T> sort(Collection<T> all) {
    T pivot = findPivot(all);
    List<T> left = all.filter(s -> s.compareTo(pivot) <= 0).toList();
