@@ -3,7 +3,8 @@
 This is the public repo of Coyote Song - the freelance contractor
 company for [Bear Giles](mailto:bgiles@coyotesong.com). I'm currently focused on databases,
 testing, and security, and starting to take a deep dive into locally hosted AI + RAG
-using both NVIDIA Jetsen and Corel accelerators.
+using both NVIDIA Jetson Orin Nano (2) and Corel accelerators now that I have finally
+received them.
 
 ## Portfolio
 
@@ -63,6 +64,14 @@ These are projects where I have working code but its still in the exploration st
   I have ideas on a serverless implementation that manages the resources but I don't
   know if there's still sufficient need for this given the improvements in docker,
   IDEs, etc.
+
+### Oddball Projects
+
+I also have a few "what if?..." projects... but I know I should be using python
+for them instead of Java. (But I can knock out working code in Java and then decide
+if it's worth redoing it in python as an exercise.)
+
+- [dpkg-java](dpkg-java.md)
 
 ## Spring Boot
 
