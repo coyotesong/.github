@@ -73,6 +73,8 @@ if it's worth redoing it in python as an exercise.)
 
 - [dpkg-java](dpkg-java.md)
 
+- [paper](paper.md)
+
 ## Spring Boot
 
 ### [spring-boot-with-testcontainers-examples](https://github.com/coyotesong/spring-boot-with-testcontainers-examples)
