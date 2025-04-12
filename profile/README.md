@@ -73,7 +73,7 @@ if it's worth redoing it in python as an exercise.)
 
 - [dpkg-java](dpkg-java.md)
 
-- [paper](paper.md)
+- [paper-java](paper-java.md)
 
 ## Spring Boot
 
