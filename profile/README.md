@@ -19,22 +19,30 @@ to think beyond the immediate problem.
 This does not include a ton of database-specific projects, esp. the ones involving
 server-side extensions.
 
+### Contributions to existing projects
+
 | Project                      | Status   | Description                                              |
 |------------------------------|----------|----------------------------------------------------------|
 | apache commons-archive       | accepted | read-only access to legacy Unix backup files             |
 | maven-dependency-plugin      | pre-PR   | refactored 'tree' to use velocity, improved .dot         |
 | apache velocity-engine       | pre-PR   | new directives #indent and #collapse                     |
-| [coyotesong/erdiagram-maven-plugin](https://github.com/coyotesong/erdiagram-maven-plugin) | active   | creates Entity-Relationship Diagrams |
 | testcontainers               | pre-PR   | I have a ton but the team feels they're too specialized. |
 | hamcrest matchers            | POC      | annotations -> custom Hamcrest matcher (plugin)          |
+
+### Independent development
+
+| Project                      | Status   | Description                                              |
+|------------------------------|----------|----------------------------------------------------------|
+| [coyotesong/erdiagram-maven-plugin](https://github.com/coyotesong/erdiagram-maven-plugin) | active | creates Entity-Relationship Diagrams |
+| coyotesong/database-metadata-comparison | active | app to compare multiple databases/versions using TC |
 | RSS client + persistence     | POC      | client + database schema + implementation                |
 | YouTube client + persistence | POC      | client + database schema + implementation                |
 
-"POC" = "Proof of Concept". I've been using it in my own projects and am now smoothing
-off the rough edges so other people can use it. This often involves identifying a suitable
-existing project to extend via PR, vs. having yet another standalone implementation.l
+### Notes on projects
 
-Notes:
+- "POC" = "Proof of Concept". I've been using it in my own projects and am now smoothing
+  off the rough edges so other people can use it. This often involves identifying a suitable
+  existing project to extend via PR, vs. having yet another standalone implementation.l
 
 - RSS: I have since learned of Apache Nutch and may not pursue this much further. My primary
   goal had been using RSS to get a list of URLs to download and cache for use by subsequent
@@ -44,9 +52,7 @@ Notes:
 
 - YouTube: the goal is to download and cache all metadata and use it in advanced searches.
 
-### Pre-Proof of Concept
-
-These are projects where I have working code but its still in the exploration stage.
+### Planned work
 
 - Maven archetype to create skeleton implementation of a Spring Boot webapp. The intention
   is to use it in my blog - the blog examples can always start with this architype and
