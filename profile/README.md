@@ -26,7 +26,6 @@ server-side extensions.
 | apache velocity-engine       | pre-PR   | new directives #indent and #collapse                     |
 | [coyotesong/erdiagram-maven-plugin](https://github.com/coyotesong/erdiagram-maven-plugin) | active   | creates Entity-Relationship Diagrams |
 | testcontainers               | pre-PR   | I have a ton but the team feels they're too specialized. |
-| (tbd)                        | POC      | JDBC -> Entity Relation Diagram (.dot) (plugin)          |
 | hamcrest matchers            | POC      | annotations -> custom Hamcrest matcher (plugin)          |
 | RSS client + persistence     | POC      | client + database schema + implementation                |
 | YouTube client + persistence | POC      | client + database schema + implementation                |
