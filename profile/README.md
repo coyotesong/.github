@@ -24,7 +24,7 @@ server-side extensions.
 | apache commons-archive       | accepted | read-only access to legacy Unix backup files             |
 | maven-dependency-plugin      | pre-PR   | refactored 'tree' to use velocity, improved .dot         |
 | apache velocity-engine       | pre-PR   | new directives #indent and #collapse                     |
-| [erdiagram-maven-plugin](https://github.com/coyotesong/erdiagram-maven-plugin) | active   | creates Entity-Relationship Diagrams |
+| [coyotesong/erdiagram-maven-plugin](https://github.com/coyotesong/erdiagram-maven-plugin) | active   | creates Entity-Relationship Diagrams |
 | testcontainers               | pre-PR   | I have a ton but the team feels they're too specialized. |
 | (tbd)                        | POC      | JDBC -> Entity Relation Diagram (.dot) (plugin)          |
 | hamcrest matchers            | POC      | annotations -> custom Hamcrest matcher (plugin)          |
