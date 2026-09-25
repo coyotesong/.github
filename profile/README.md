@@ -6,6 +6,59 @@ testing, and security, and starting to take a deep dive into locally hosted AI +
 using both NVIDIA Jetson Orin Nano (2) and Corel accelerators now that I have finally
 received them.
 
+## Latest
+
+I've been floating the idea of a local 'homelab' meetup - we already have fairly active
+linux and devops (now "secure AI and devops") meetups but they tend to focus on the latest
+releases and new applications. Most of the interest in homelabs has been consumer-facing,
+e.g., plex or minecraft servers, but there are several good reasons for professionals to
+look at them:
+
+- **Local AI** It doesn't have to be fast - the primary motivation is protecting confidentiality.
+  After the recent breaches by OpenAI there's a lot to be said for being able to ensure there's
+  a proper air gap between your local AI and the rest of the world,
+
+- **Security playground** OWASP and others have excellent training material for basic cybersecurity
+  but they're just a start. A robust homelab lets you create a fairly complete production
+  environment and explore both attacks and defenses without the questions that may come up in
+  a cloud environment even after telling the provider you're conducting security research.
+
+  This playground can include logging (e.g., zabbix), log analysis tools, and even SEIM
+  (e.g., Wazuh).
+
+- **Application playground** Few developers know much about the applications and servers they
+  use. Definitely enough to get their job done... but it's not uncommon for developers to
+  be unaware that the server can already has the functionality they need for their latest task.
+  Searches, and especially AI searches, can help, but nothing beats hands-on experience on
+  a real server.
+
+- **High Availability (HA) playground** High Availability is no longer a false promise - but
+  proper use of HA may involve more than just providing more than a single URL when configuring
+  your servers. Proper configuration of HA is also much more than just flipping a few flags.
+
+  A HA playground doesn't require much to get started - three nodes is usually enough. But
+  getting those nodes to play nicely with each other in a way that lets you deploy a HA application
+  on top of them may have some surprises. (DNS. Did I mentioned DNS?)
+
+This would all be built as a Proxmox HA cluster, of course, so it requires at least 3 hosts.
+Additional systems would be required for a proper NAS, etc. I don't recall if Proxmox Data Center
+should be run on a separate host or if it can be run on one (or more) of the VE nodes.
+
+All of this can fit into a full-sized rack but that can be awkward in a home environment.
+10" racks were an option but were still a mess due to the large power bricks required by the
+computers. The GaN chargers have changed that since you can now power everything from a single
+GaN charger, USB PD cables, and as required USB PD -> barrel power connectors.
+
+That means the HA cluster can be taken to the proposed meetups - the cloud can still be
+used for any 'hands on' work (or perhaps EVE-NG on the cluster) but having a cluster physically
+present can make a big difference for many people.
+
+This may also be a business opportunity - building and configuration of these systems is a
+non-trivial task and a lot of people would be willing to pay a premium over component costs
+if they're delivered a system that is already loaded with FreeIPA (or Active Directory), an
+AWX instance, and a handful of prepared ansible playbooks to launch various HA services.
+
+
 ## Portfolio
 
 I've been using my sabbatical to follow a former boss's advice and submitting some of
